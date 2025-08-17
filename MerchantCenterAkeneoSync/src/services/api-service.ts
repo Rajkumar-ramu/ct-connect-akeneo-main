@@ -1,3 +1,10 @@
+
+
+import createHttpUserAgent from '@commercetools/http-user-agent';
+import {
+  buildApiUrl,
+  executeHttpClientRequest,
+} from '@commercetools-frontend/application-shell';
 declare global {
   interface Window {
     app?: {
@@ -5,13 +12,6 @@ declare global {
     };
   }
 }
-
-import createHttpUserAgent from '@commercetools/http-user-agent';
-import {
-  buildApiUrl,
-  executeHttpClientRequest,
-} from '@commercetools-frontend/application-shell';
-
 interface ApiError extends Error {
   status?: number;
   body?: {

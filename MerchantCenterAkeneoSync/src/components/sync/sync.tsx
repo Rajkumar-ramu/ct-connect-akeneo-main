@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import Text from '@commercetools-uikit/text';
 import Spacings from '@commercetools-uikit/spacings';
@@ -233,7 +234,7 @@ const SyncApp: React.FC = () => {
             </Spacings.Stack>
 
             <Spacings.Stack scale="l">
-              <ConfigEditor initialConfig={''} onSave={handleSave} />
+              <ConfigEditor initialConfig={'[]'} onSave={handleSave} />
             </Spacings.Stack>
           </Spacings.Stack>
         </Constraints.Horizontal>
